@@ -18,11 +18,9 @@ fn main() {
 
     println!("Welcome back {}!", user.name);
 
-    let mut online = true;
-
-    while online {
+    loop {
         println!(
-            "What would you like to do today?\n[1] Post a product\n[2] List available auctions\n[3] Exit\n"
+            "What would you like to do today?\n[1] Add a product\n[2] List available auctions\n[3] Exit\n"
         );
 
         let mut input = String::new();
@@ -35,7 +33,7 @@ fn main() {
             Ok(opt) => match opt {
                 1 => println!("TODO\n"),
                 2 => println!("TODO\n"),
-                3 => online = false,
+                3 => break,
                 _ => println!("Please enter a valid option!\n"),
             },
             Err(_) => println!("Please enter a valid option!\n")
