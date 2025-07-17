@@ -10,7 +10,7 @@
 I will keep a record with the progress of the development of the tool. The idea is to start small, with a single user and no parallelism or APIs, so we can track progress and add features when necessary.
 
 ### Idea
-<img align="left" src="assets/images/client-server-architecture" alt="Client-Server architecture" width="300" height="200"/>
+<img align="left" src="assets/images/client-server-architecture.png" alt="Client-Server architecture" width="300" height="200"/>
 
 We want to create a client-server following the image example. The idea is for clients to interact through the server e.g. some client publishes an item and others can bid on it, but all these actions must happen through the server. In order to run the project we will need at least 2 processes: one for the server and one for the client. At this point I'm not sure if we'll have to restrt to REST APIs but initially some sort of IPC mechanism will ahve to exist for the communciation between client and server.
 
